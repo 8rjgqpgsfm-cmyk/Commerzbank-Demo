@@ -39,7 +39,7 @@
 
 To get started, follow these steps to run the application on your local application:
 
-- Make sure you have Java 17 installed on your system. You can download it from the official Oracle website.
+- Make sure you have Java 21 (LTS) installed on your system. You can download a build from [Adoptium / Eclipse Temurin](https://adoptium.net/temurin/releases/?version=21) or the official Oracle website. See [`docs/JAVA_21_MIGRATION.md`](./docs/JAVA_21_MIGRATION.md) for migration notes.
 - Select an Integrated Development Environment (IDE) such as Eclipse, Spring Tool Suite, or IntelliJ IDEA. Configure the IDE according to your preferences.
 - Clone the repository containing the microservices onto your local system using Git. Navigate to the directory where you have cloned the repository.
 - Navigate to each microservice directory within the cloned repository and run the application. You can do this by using your IDE or running specific commands depending on the build tool used (e.g., Maven or Gradle).
