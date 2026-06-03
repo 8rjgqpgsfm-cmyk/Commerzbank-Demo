@@ -27,7 +27,7 @@ import org.training.user.service.service.KeycloakService;
 import org.training.user.service.service.UserService;
 import org.training.user.service.utils.FieldChecker;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;

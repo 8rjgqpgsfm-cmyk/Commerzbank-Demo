@@ -8,7 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.training.transactions.model.TransactionStatus;
 import org.training.transactions.model.TransactionType;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 

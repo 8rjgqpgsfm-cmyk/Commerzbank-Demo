@@ -8,7 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.training.fundtransfer.model.TransactionStatus;
 import org.training.fundtransfer.model.TransferType;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
