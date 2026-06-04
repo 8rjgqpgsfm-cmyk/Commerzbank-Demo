@@ -8,7 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.training.account.service.model.AccountStatus;
 import org.training.account.service.model.AccountType;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
