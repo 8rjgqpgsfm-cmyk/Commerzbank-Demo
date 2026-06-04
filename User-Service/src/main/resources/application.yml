@@ -15,18 +15,32 @@ spring:
     password: ${MYSQL_PASSWORD:root}
   jpa:
     hibernate:
-      ddl-auto: update
-    show-sql: true
+      ddl-auto: ${JPA_DDL_AUTO:update}
+    show-sql: ${JPA_SHOW_SQL:false}
     properties:
       hibernate:
-        format_sql: true
+        format_sql: ${JPA_FORMAT_SQL:false}
 
 
 app:
   config:
     keycloak:
-      server-url: http://localhost:8571
-      realm: banking-service
-      client-id: banking-service-api-client
-      client-secret: 932OFITe8vtH4z0G9gem4Afd69JhbwrI
+      server-url: ${KEYCLOAK_SERVER_URL:http://localhost:8571}
+      realm: ${KEYCLOAK_REALM:banking-service}
+      client-id: ${KEYCLOAK_CLIENT_ID:banking-service-api-client}
+      client-secret: ${KEYCLOAK_CLIENT_SECRET:}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
 
